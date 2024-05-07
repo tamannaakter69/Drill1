@@ -1,0 +1,77 @@
+.h1{
+    text-align: center;
+    background-color: rgb(35, 2, 65);
+    padding: 30px;
+    color: azure;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: #ff00ae;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 33px;
+}
+.parent-box{
+    margin: auto;
+    background-color: aquamarine;
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+@media only screen and (max-width:600px){
+    .parent-box{
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+    }
+    .box{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:768px){
+    .parent-box{
+        display: flex;
+        flex-direction: column;
+        background-color: yellowgreen;
+    }
+    .box{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:992px){
+    .parent-box{
+        display: flex;
+        flex-direction: column;
+        background-color: orangered;
+    }
+    .box{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1200px){
+    .parent-box{
+        display: flex;
+        flex-direction: row;
+        background-color: blueviolet;
+    }
+    .box{
+        width: 40%;
+    }
+}
+@media only screen and (min-width:1200px){
+    .parent-box{
+        display: flex;
+        flex-direction: column;
+        background-color: purple;
+    }
+    .box{
+        width: 100%;
+    }
+}
